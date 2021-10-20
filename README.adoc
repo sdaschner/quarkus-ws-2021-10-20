@@ -24,12 +24,13 @@
   https://blog.sebastian-daschner.com/entries/flyway-migrate-databases-managed-k8s
 ✓ CDI, Quarkus-specifics
   Profiles, Events, Qualifiers, Producer Methods
-- Concurrency, scheduling
-- Instrumentation, metrics, health
+✓ Concurrency, scheduling
+  https://quarkus.io/guides/context-propagation
+✓ Instrumentation, metrics, health
+  Micrometer, Prometheus
 - Qute Templating
+- Native mode vs. JVM mode
 - Docker, deployment, DevOps aspects
 - Quarkus ecosystem
 - Project structure / package names
-- Native mode vs. JVM mode
 - Security, JWT, user auth, OIDC, Keycloak
-- Advanced topics
