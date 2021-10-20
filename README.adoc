@@ -1,9 +1,13 @@
 = Modern enterprise development with Quarkus
 2021-10-20
 
-- Hello world in Quarkus
-- Difference to Spring & traditional EE
-- Quarkus dev mode, turnaround times
+✓ Hello world in Quarkus
+  HTTP GET ...:8080/hello -> hello()
+  https://quarkus.io/guides/cdi-reference#simplified-constructor-injection
+✓ Difference to Spring & traditional EE
+  build-time optimization
+✓ Quarkus dev mode, turnaround times
+  debug via :5005 (quarkus:dev)
 - REST, JSON
 - Persistence, transactions, Panache, data migration
 - Configuration
