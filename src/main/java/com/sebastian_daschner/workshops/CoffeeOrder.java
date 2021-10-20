@@ -1,45 +1,30 @@
 package com.sebastian_daschner.workshops;
 
 import javax.json.bind.annotation.JsonbTransient;
+import javax.persistence.*;
 import java.time.Instant;
 
+@Entity
+@Table(name = "coffee_orders")
 public class CoffeeOrder {
 
-    private OrderType type;
-    private Instant created;
+    @Id
+    @GeneratedValue
     @JsonbTransient
-    private int number = 123;
+    public long id;
 
-    public CoffeeOrder() {
-    }
+    @Enumerated(EnumType.STRING)
+    @Column(name = "order_type")
+    public OrderType type;
 
-    public CoffeeOrder(OrderType type) {
-        this.type = type;
-        this.created = Instant.now();
-    }
+    public Instant created;
 
-    public OrderType getType() {
-        return type;
-    }
+    @JsonbTransient
+    public int number = 123;
 
-    public void setType(OrderType type) {
-        this.type = type;
-    }
-
-    public Instant getCreated() {
-        return created;
-    }
-
-    public void setCreated(Instant created) {
-        this.created = created;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
+    @PrePersist
+    void updateDate() {
+        created = Instant.now();
     }
 
     @Override

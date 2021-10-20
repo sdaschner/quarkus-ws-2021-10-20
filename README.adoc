@@ -18,7 +18,10 @@
   MicroProfile Config, different config sources (application.properties, env, System, ...)
   complex configuration types with @ConfigMapping
   https://blog.sebastian-daschner.com/entries/quarkus-complex-configuration-configmapping
-- Persistence, transactions, Panache, data migration
+✓ Persistence, transactions, Panache, data migration
+  N-1 compatibility
+  https://blog.sebastian-daschner.com/entries/flyway-migrate-databases-quarkus
+  https://blog.sebastian-daschner.com/entries/flyway-migrate-databases-managed-k8s
 - CDI, Quarkus-specifics
 - Instrumentation, metrics, health
 - Concurrency, scheduling

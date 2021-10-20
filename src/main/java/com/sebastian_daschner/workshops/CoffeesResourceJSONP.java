@@ -25,10 +25,10 @@ public class CoffeesResourceJSONP {
 
         return coffeeOrders.stream()
                 .map(o -> Json.createObjectBuilder()
-                        .add("type", o.getType().name())
-                        .add("created", o.getCreated().toString())
+                        .add("type", o.type.name())
+                        .add("created", o.created.toString())
                         .add("number", Json.createObjectBuilder()
-                                .add("number", o.getNumber()))
+                                .add("number", o.number))
                         .add("_self", "http://localhost:8080/coffees/123")
                         .build())
                 .collect(JsonCollectors.toJsonArray());
