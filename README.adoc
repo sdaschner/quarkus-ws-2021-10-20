@@ -14,7 +14,10 @@
   JSON-P for programmatic mapping
   client, "Rest Client" -> MicroProfile Rest Client or JAX-RS Client
   https://quarkus.io/guides/rest-client
-- Configuration
+✓ Configuration
+  MicroProfile Config, different config sources (application.properties, env, System, ...)
+  complex configuration types with @ConfigMapping
+  https://blog.sebastian-daschner.com/entries/quarkus-complex-configuration-configmapping
 - Persistence, transactions, Panache, data migration
 - CDI, Quarkus-specifics
 - Instrumentation, metrics, health
@@ -24,5 +27,5 @@
 - Quarkus ecosystem
 - Project structure / package names
 - Native mode vs. JVM mode
-- Security, JWT, user auth, OIDC
+- Security, JWT, user auth, OIDC, Keycloak
 - Advanced topics

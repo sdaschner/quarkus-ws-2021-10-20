@@ -1,18 +1,25 @@
 package com.sebastian_daschner.workshops;
 
-import org.eclipse.microprofile.rest.client.inject.RestClient;
+import org.eclipse.microprofile.config.ConfigProvider;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import javax.json.JsonValue;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @ApplicationScoped
 public class CoffeeShop {
 
     @Inject
     CountriesServiceV2 service;
+
+    @Inject
+    @ConfigProperty(name = "version")
+    String version;
+
+    @Inject
+    @ConfigProperty(name = "versions")
+    List<String> versions;
 
     public void orderCoffee(CoffeeOrder order) {
         // ...
@@ -23,6 +30,10 @@ public class CoffeeShop {
     }
 
     public List<CoffeeOrder> listOrders() {
+        System.out.println("versions = " + versions);
+        String version = ConfigProvider.getConfig().getValue("version", String.class);
+        System.out.println("version = " + version);
+
         return List.of(new CoffeeOrder(CoffeeOrder.OrderType.ESPRESSO),
                 new CoffeeOrder(CoffeeOrder.OrderType.CAPPUCCINO));
     }
