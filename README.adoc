@@ -8,15 +8,21 @@
   build-time optimization
 ✓ Quarkus dev mode, turnaround times
   debug via :5005 (quarkus:dev)
-- REST, JSON
-- Persistence, transactions, Panache, data migration
+✓ REST, JSON
+  JSON-B for declarative mapping
+  https://quarkus.io/guides/rest-json
+  JSON-P for programmatic mapping
+  client, "Rest Client" -> MicroProfile Rest Client or JAX-RS Client
+  https://quarkus.io/guides/rest-client
 - Configuration
+- Persistence, transactions, Panache, data migration
 - CDI, Quarkus-specifics
 - Instrumentation, metrics, health
 - Concurrency, scheduling
 - Qute Templating
 - Docker, deployment, DevOps aspects
 - Quarkus ecosystem
+- Project structure / package names
 - Native mode vs. JVM mode
 - Security, JWT, user auth, OIDC
 - Advanced topics
