@@ -1,4 +1,4 @@
-package com.sebastian_daschner.workshops;
+package com.sebastian_daschner.workshops.countries.control;
 
 import org.eclipse.microprofile.rest.client.RestClientBuilder;
 import org.eclipse.microprofile.rest.client.inject.RestClient;

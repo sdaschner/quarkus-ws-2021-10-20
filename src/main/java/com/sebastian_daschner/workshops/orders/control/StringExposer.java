@@ -1,4 +1,4 @@
-package com.sebastian_daschner.workshops;
+package com.sebastian_daschner.workshops.orders.control;
 
 import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Produces;

@@ -28,9 +28,16 @@
   https://quarkus.io/guides/context-propagation
 ✓ Instrumentation, metrics, health
   Micrometer, Prometheus
-- Qute Templating
-- Native mode vs. JVM mode
-- Docker, deployment, DevOps aspects
-- Quarkus ecosystem
-- Project structure / package names
-- Security, JWT, user auth, OIDC, Keycloak
+✓ Qute Templating
+✓ Native mode vs. JVM mode
+✓ Docker, deployment, DevOps aspects
+✓ Project structure / package names
+  vertical package names, BCE (boundary control entity) packaging
+✓ Security, JWT, user auth, OIDC, Keycloak
+  https://quarkus.io/guides/security
+  https://quarkus.io/guides/security-keycloak-authorization
+✓ Quarkus ecosystem
+  https://github.com/quarkusio/quarkus/
+✓ API Versioning
+  Content-Type: application/json+<...>
+  Accept: application/json+<...>

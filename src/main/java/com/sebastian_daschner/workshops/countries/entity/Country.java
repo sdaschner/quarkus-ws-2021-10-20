@@ -1,4 +1,4 @@
-package com.sebastian_daschner.workshops;
+package com.sebastian_daschner.workshops.countries.entity;
 
 public class Country {
 

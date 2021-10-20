@@ -1,4 +1,4 @@
-package com.sebastian_daschner.workshops;
+package com.sebastian_daschner.workshops.orders.entity;
 
 import javax.json.bind.annotation.JsonbTransient;
 import javax.persistence.*;

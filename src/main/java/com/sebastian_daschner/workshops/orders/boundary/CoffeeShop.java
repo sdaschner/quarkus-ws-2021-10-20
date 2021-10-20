@@ -1,4 +1,7 @@
-package com.sebastian_daschner.workshops;
+package com.sebastian_daschner.workshops.orders.boundary;
+
+import com.sebastian_daschner.workshops.orders.entity.CoffeeOrder;
+import com.sebastian_daschner.workshops.orders.control.CoffeeOrderRepository;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;

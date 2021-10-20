@@ -1,4 +1,6 @@
-package com.sebastian_daschner.workshops;
+package com.sebastian_daschner.workshops.orders.control;
+
+import com.sebastian_daschner.workshops.orders.entity.CoffeeOrder;
 
 import javax.enterprise.event.ObservesAsync;
 import java.util.concurrent.locks.LockSupport;

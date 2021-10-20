@@ -1,4 +1,4 @@
-package com.sebastian_daschner.workshops;
+package com.sebastian_daschner.workshops.concurrency.boundary;
 
 import io.micrometer.core.annotation.Counted;
 import io.micrometer.core.instrument.MeterRegistry;
