@@ -22,7 +22,8 @@
   N-1 compatibility
   https://blog.sebastian-daschner.com/entries/flyway-migrate-databases-quarkus
   https://blog.sebastian-daschner.com/entries/flyway-migrate-databases-managed-k8s
-- CDI, Quarkus-specifics
+✓ CDI, Quarkus-specifics
+  Profiles, Events, Qualifiers, Producer Methods
 - Instrumentation, metrics, health
 - Concurrency, scheduling
 - Qute Templating

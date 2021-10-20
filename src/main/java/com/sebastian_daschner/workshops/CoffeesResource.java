@@ -1,5 +1,6 @@
 package com.sebastian_daschner.workshops;
 
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -8,13 +9,18 @@ import java.util.List;
 @Path("coffees")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
+@RequestScoped
 public class CoffeesResource {
 
     @Inject
     CoffeeShop coffeeShop;
 
+    @Inject
+    String config;
+
     @GET
     public List<CoffeeOrder> getOrders() {
+        System.out.println("config = " + config);
         return coffeeShop.listOrders();
     }
 

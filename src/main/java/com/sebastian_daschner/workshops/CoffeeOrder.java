@@ -14,7 +14,6 @@ public class CoffeeOrder {
     public long id;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "order_type")
     public OrderType type;
 
     public Instant created;
