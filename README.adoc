@@ -24,8 +24,8 @@
   https://blog.sebastian-daschner.com/entries/flyway-migrate-databases-managed-k8s
 ✓ CDI, Quarkus-specifics
   Profiles, Events, Qualifiers, Producer Methods
-- Instrumentation, metrics, health
 - Concurrency, scheduling
+- Instrumentation, metrics, health
 - Qute Templating
 - Docker, deployment, DevOps aspects
 - Quarkus ecosystem
